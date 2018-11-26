@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `Peripherals` struct in crate `atsamd51j19a`."><meta name="keywords" content="rust, rustlang, rust-lang, Peripherals"><title>atsamd51j19a::Peripherals - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script></head><body class="rustdoc struct"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Struct Peripherals</p><div class="sidebar-elems"><div class="block items"><a class="sidebar-title" href="#fields">Fields</a><div class="sidebar-links"><a href="#structfield.AC">AC</a><a href="#structfield.ADC0">ADC0</a><a href="#structfield.ADC1">ADC1</a><a href="#structfield.AES">AES</a><a href="#structfield.CCL">CCL</a><a href="#structfield.CMCC">CMCC</a><a href="#structfield.DAC">DAC</a><a href="#structfield.DMAC">DMAC</a><a href="#structfield.DSU">DSU</a><a href="#structfield.EIC">EIC</a><a href="#structfield.EVSYS">EVSYS</a><a href="#structfield.FREQM">FREQM</a><a href="#structfield.GCLK">GCLK</a><a href="#structfield.HMATRIX">HMATRIX</a><a href="#structfield.ICM">ICM</a><a href="#structfield.I2S">I2S</a><a href="#structfield.MCLK">MCLK</a><a href="#structfield.NVMCTRL">NVMCTRL</a><a href="#structfield.OSCCTRL">OSCCTRL</a><a href="#structfield.OSC32KCTRL">OSC32KCTRL</a><a href="#structfield.PAC">PAC</a><a href="#structfield.PCC">PCC</a><a href="#structfield.PDEC">PDEC</a><a href="#structfield.PM">PM</a><a href="#structfield.PORT">PORT</a><a href="#structfield.QSPI">QSPI</a><a href="#structfield.RAMECC">RAMECC</a><a href="#structfield.RSTC">RSTC</a><a href="#structfield.RTC">RTC</a><a href="#structfield.SDHC0">SDHC0</a><a href="#structfield.SERCOM0">SERCOM0</a><a href="#structfield.SERCOM1">SERCOM1</a><a href="#structfield.SERCOM2">SERCOM2</a><a href="#structfield.SERCOM3">SERCOM3</a><a href="#structfield.SERCOM4">SERCOM4</a><a href="#structfield.SERCOM5">SERCOM5</a><a href="#structfield.SUPC">SUPC</a><a href="#structfield.TC0">TC0</a><a href="#structfield.TC1">TC1</a><a href="#structfield.TC2">TC2</a><a href="#structfield.TC3">TC3</a><a href="#structfield.TC4">TC4</a><a href="#structfield.TC5">TC5</a><a href="#structfield.TCC0">TCC0</a><a href="#structfield.TCC1">TCC1</a><a href="#structfield.TCC2">TCC2</a><a href="#structfield.TCC3">TCC3</a><a href="#structfield.TCC4">TCC4</a><a href="#structfield.TRNG">TRNG</a><a href="#structfield.USB">USB</a><a href="#structfield.WDT">WDT</a></div><a class="sidebar-title" href="#methods">Methods</a><div class="sidebar-links"><a href="#method.take">take</a><a href="#method.steal">steal</a></div><a class="sidebar-title" href="#synthetic-implementations">Auto Trait Implementations</a><div class="sidebar-links"><a href="#impl-Send">Send</a><a href="#impl-Sync">!Sync</a></div><a class="sidebar-title" href="#blanket-implementations">Blanket Implementations</a><div class="sidebar-links"><a href="#impl-From">From</a><a href="#impl-TryFrom">TryFrom</a><a href="#impl-TryInto">TryInto</a><a href="#impl-Into">Into</a><a href="#impl-Borrow">Borrow</a><a href="#impl-BorrowMut">BorrowMut</a><a href="#impl-Any">Any</a></div></div><p class='location'><a href='index.html'>atsamd51j19a</a></p><script>window.sidebarCurrent = {name: 'Peripherals', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/atsamd51j19a/lib.rs.html#1788-1891' title='goto source code'>[src]</a></span><span class='in-band'>Struct <a href='index.html'>atsamd51j19a</a>::<wbr><a class="struct" href=''>Peripherals</a></span></h1><div class="docblock type-decl hidden-by-usual-hider"><pre class='rust struct'>pub struct Peripherals {
+    pub AC: <a class="struct" href="../atsamd51j19a/struct.AC.html" title="struct atsamd51j19a::AC">AC</a>,
+    pub ADC0: <a class="struct" href="../atsamd51j19a/struct.ADC0.html" title="struct atsamd51j19a::ADC0">ADC0</a>,
+    pub ADC1: <a class="struct" href="../atsamd51j19a/struct.ADC1.html" title="struct atsamd51j19a::ADC1">ADC1</a>,
+    pub AES: <a class="struct" href="../atsamd51j19a/struct.AES.html" title="struct atsamd51j19a::AES">AES</a>,
+    pub CCL: <a class="struct" href="../atsamd51j19a/struct.CCL.html" title="struct atsamd51j19a::CCL">CCL</a>,
+    pub CMCC: <a class="struct" href="../atsamd51j19a/struct.CMCC.html" title="struct atsamd51j19a::CMCC">CMCC</a>,
+    pub DAC: <a class="struct" href="../atsamd51j19a/struct.DAC.html" title="struct atsamd51j19a::DAC">DAC</a>,
+    pub DMAC: <a class="struct" href="../atsamd51j19a/struct.DMAC.html" title="struct atsamd51j19a::DMAC">DMAC</a>,
+    pub DSU: <a class="struct" href="../atsamd51j19a/struct.DSU.html" title="struct atsamd51j19a::DSU">DSU</a>,
+    pub EIC: <a class="struct" href="../atsamd51j19a/struct.EIC.html" title="struct atsamd51j19a::EIC">EIC</a>,
+    pub EVSYS: <a class="struct" href="../atsamd51j19a/struct.EVSYS.html" title="struct atsamd51j19a::EVSYS">EVSYS</a>,
+    pub FREQM: <a class="struct" href="../atsamd51j19a/struct.FREQM.html" title="struct atsamd51j19a::FREQM">FREQM</a>,
+    pub GCLK: <a class="struct" href="../atsamd51j19a/struct.GCLK.html" title="struct atsamd51j19a::GCLK">GCLK</a>,
+    pub HMATRIX: <a class="struct" href="../atsamd51j19a/struct.HMATRIX.html" title="struct atsamd51j19a::HMATRIX">HMATRIX</a>,
+    pub ICM: <a class="struct" href="../atsamd51j19a/struct.ICM.html" title="struct atsamd51j19a::ICM">ICM</a>,
+    pub I2S: <a class="struct" href="../atsamd51j19a/struct.I2S.html" title="struct atsamd51j19a::I2S">I2S</a>,
+    pub MCLK: <a class="struct" href="../atsamd51j19a/struct.MCLK.html" title="struct atsamd51j19a::MCLK">MCLK</a>,
+    pub NVMCTRL: <a class="struct" href="../atsamd51j19a/struct.NVMCTRL.html" title="struct atsamd51j19a::NVMCTRL">NVMCTRL</a>,
+    pub OSCCTRL: <a class="struct" href="../atsamd51j19a/struct.OSCCTRL.html" title="struct atsamd51j19a::OSCCTRL">OSCCTRL</a>,
+    pub OSC32KCTRL: <a class="struct" href="../atsamd51j19a/struct.OSC32KCTRL.html" title="struct atsamd51j19a::OSC32KCTRL">OSC32KCTRL</a>,
+    pub PAC: <a class="struct" href="../atsamd51j19a/struct.PAC.html" title="struct atsamd51j19a::PAC">PAC</a>,
+    pub PCC: <a class="struct" href="../atsamd51j19a/struct.PCC.html" title="struct atsamd51j19a::PCC">PCC</a>,
+    pub PDEC: <a class="struct" href="../atsamd51j19a/struct.PDEC.html" title="struct atsamd51j19a::PDEC">PDEC</a>,
+    pub PM: <a class="struct" href="../atsamd51j19a/struct.PM.html" title="struct atsamd51j19a::PM">PM</a>,
+    pub PORT: <a class="struct" href="../atsamd51j19a/struct.PORT.html" title="struct atsamd51j19a::PORT">PORT</a>,
+    pub QSPI: <a class="struct" href="../atsamd51j19a/struct.QSPI.html" title="struct atsamd51j19a::QSPI">QSPI</a>,
+    pub RAMECC: <a class="struct" href="../atsamd51j19a/struct.RAMECC.html" title="struct atsamd51j19a::RAMECC">RAMECC</a>,
+    pub RSTC: <a class="struct" href="../atsamd51j19a/struct.RSTC.html" title="struct atsamd51j19a::RSTC">RSTC</a>,
+    pub RTC: <a class="struct" href="../atsamd51j19a/struct.RTC.html" title="struct atsamd51j19a::RTC">RTC</a>,
+    pub SDHC0: <a class="struct" href="../atsamd51j19a/struct.SDHC0.html" title="struct atsamd51j19a::SDHC0">SDHC0</a>,
+    pub SERCOM0: <a class="struct" href="../atsamd51j19a/struct.SERCOM0.html" title="struct atsamd51j19a::SERCOM0">SERCOM0</a>,
+    pub SERCOM1: <a class="struct" href="../atsamd51j19a/struct.SERCOM1.html" title="struct atsamd51j19a::SERCOM1">SERCOM1</a>,
+    pub SERCOM2: <a class="struct" href="../atsamd51j19a/struct.SERCOM2.html" title="struct atsamd51j19a::SERCOM2">SERCOM2</a>,
+    pub SERCOM3: <a class="struct" href="../atsamd51j19a/struct.SERCOM3.html" title="struct atsamd51j19a::SERCOM3">SERCOM3</a>,
+    pub SERCOM4: <a class="struct" href="../atsamd51j19a/struct.SERCOM4.html" title="struct atsamd51j19a::SERCOM4">SERCOM4</a>,
+    pub SERCOM5: <a class="struct" href="../atsamd51j19a/struct.SERCOM5.html" title="struct atsamd51j19a::SERCOM5">SERCOM5</a>,
+    pub SUPC: <a class="struct" href="../atsamd51j19a/struct.SUPC.html" title="struct atsamd51j19a::SUPC">SUPC</a>,
+    pub TC0: <a class="struct" href="../atsamd51j19a/struct.TC0.html" title="struct atsamd51j19a::TC0">TC0</a>,
+    pub TC1: <a class="struct" href="../atsamd51j19a/struct.TC1.html" title="struct atsamd51j19a::TC1">TC1</a>,
+    pub TC2: <a class="struct" href="../atsamd51j19a/struct.TC2.html" title="struct atsamd51j19a::TC2">TC2</a>,
+    pub TC3: <a class="struct" href="../atsamd51j19a/struct.TC3.html" title="struct atsamd51j19a::TC3">TC3</a>,
+    pub TC4: <a class="struct" href="../atsamd51j19a/struct.TC4.html" title="struct atsamd51j19a::TC4">TC4</a>,
+    pub TC5: <a class="struct" href="../atsamd51j19a/struct.TC5.html" title="struct atsamd51j19a::TC5">TC5</a>,
+    pub TCC0: <a class="struct" href="../atsamd51j19a/struct.TCC0.html" title="struct atsamd51j19a::TCC0">TCC0</a>,
+    pub TCC1: <a class="struct" href="../atsamd51j19a/struct.TCC1.html" title="struct atsamd51j19a::TCC1">TCC1</a>,
+    pub TCC2: <a class="struct" href="../atsamd51j19a/struct.TCC2.html" title="struct atsamd51j19a::TCC2">TCC2</a>,
+    pub TCC3: <a class="struct" href="../atsamd51j19a/struct.TCC3.html" title="struct atsamd51j19a::TCC3">TCC3</a>,
+    pub TCC4: <a class="struct" href="../atsamd51j19a/struct.TCC4.html" title="struct atsamd51j19a::TCC4">TCC4</a>,
+    pub TRNG: <a class="struct" href="../atsamd51j19a/struct.TRNG.html" title="struct atsamd51j19a::TRNG">TRNG</a>,
+    pub USB: <a class="struct" href="../atsamd51j19a/struct.USB.html" title="struct atsamd51j19a::USB">USB</a>,
+    pub WDT: <a class="struct" href="../atsamd51j19a/struct.WDT.html" title="struct atsamd51j19a::WDT">WDT</a>,
+}</pre></div><div class='docblock'><p>All the peripherals</p>
+</div><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id="structfield.AC" class="structfield small-section-header">
+                           <a href="#structfield.AC" class="anchor field"></a>
+                           <span id="AC.v" class='invisible'>
+                           <code>AC: <a class="struct" href="../atsamd51j19a/struct.AC.html" title="struct atsamd51j19a::AC">AC</a></code>
+                           </span></span><div class='docblock'><p>AC</p>
+</div><span id="structfield.ADC0" class="structfield small-section-header">
+                           <a href="#structfield.ADC0" class="anchor field"></a>
+                           <span id="ADC0.v" class='invisible'>
+                           <code>ADC0: <a class="struct" href="../atsamd51j19a/struct.ADC0.html" title="struct atsamd51j19a::ADC0">ADC0</a></code>
+                           </span></span><div class='docblock'><p>ADC0</p>
+</div><span id="structfield.ADC1" class="structfield small-section-header">
+                           <a href="#structfield.ADC1" class="anchor field"></a>
+                           <span id="ADC1.v" class='invisible'>
+                           <code>ADC1: <a class="struct" href="../atsamd51j19a/struct.ADC1.html" title="struct atsamd51j19a::ADC1">ADC1</a></code>
+                           </span></span><div class='docblock'><p>ADC1</p>
+</div><span id="structfield.AES" class="structfield small-section-header">
+                           <a href="#structfield.AES" class="anchor field"></a>
+                           <span id="AES.v" class='invisible'>
+                           <code>AES: <a class="struct" href="../atsamd51j19a/struct.AES.html" title="struct atsamd51j19a::AES">AES</a></code>
+                           </span></span><div class='docblock'><p>AES</p>
+</div><span id="structfield.CCL" class="structfield small-section-header">
+                           <a href="#structfield.CCL" class="anchor field"></a>
+                           <span id="CCL.v" class='invisible'>
+                           <code>CCL: <a class="struct" href="../atsamd51j19a/struct.CCL.html" title="struct atsamd51j19a::CCL">CCL</a></code>
+                           </span></span><div class='docblock'><p>CCL</p>
+</div><span id="structfield.CMCC" class="structfield small-section-header">
+                           <a href="#structfield.CMCC" class="anchor field"></a>
+                           <span id="CMCC.v" class='invisible'>
+                           <code>CMCC: <a class="struct" href="../atsamd51j19a/struct.CMCC.html" title="struct atsamd51j19a::CMCC">CMCC</a></code>
+                           </span></span><div class='docblock'><p>CMCC</p>
+</div><span id="structfield.DAC" class="structfield small-section-header">
+                           <a href="#structfield.DAC" class="anchor field"></a>
+                           <span id="DAC.v" class='invisible'>
+                           <code>DAC: <a class="struct" href="../atsamd51j19a/struct.DAC.html" title="struct atsamd51j19a::DAC">DAC</a></code>
+                           </span></span><div class='docblock'><p>DAC</p>
+</div><span id="structfield.DMAC" class="structfield small-section-header">
+                           <a href="#structfield.DMAC" class="anchor field"></a>
+                           <span id="DMAC.v" class='invisible'>
+                           <code>DMAC: <a class="struct" href="../atsamd51j19a/struct.DMAC.html" title="struct atsamd51j19a::DMAC">DMAC</a></code>
+                           </span></span><div class='docblock'><p>DMAC</p>
+</div><span id="structfield.DSU" class="structfield small-section-header">
+                           <a href="#structfield.DSU" class="anchor field"></a>
+                           <span id="DSU.v" class='invisible'>
+                           <code>DSU: <a class="struct" href="../atsamd51j19a/struct.DSU.html" title="struct atsamd51j19a::DSU">DSU</a></code>
+                           </span></span><div class='docblock'><p>DSU</p>
+</div><span id="structfield.EIC" class="structfield small-section-header">
+                           <a href="#structfield.EIC" class="anchor field"></a>
+                           <span id="EIC.v" class='invisible'>
+                           <code>EIC: <a class="struct" href="../atsamd51j19a/struct.EIC.html" title="struct atsamd51j19a::EIC">EIC</a></code>
+                           </span></span><div class='docblock'><p>EIC</p>
+</div><span id="structfield.EVSYS" class="structfield small-section-header">
+                           <a href="#structfield.EVSYS" class="anchor field"></a>
+                           <span id="EVSYS.v" class='invisible'>
+                           <code>EVSYS: <a class="struct" href="../atsamd51j19a/struct.EVSYS.html" title="struct atsamd51j19a::EVSYS">EVSYS</a></code>
+                           </span></span><div class='docblock'><p>EVSYS</p>
+</div><span id="structfield.FREQM" class="structfield small-section-header">
+                           <a href="#structfield.FREQM" class="anchor field"></a>
+                           <span id="FREQM.v" class='invisible'>
+                           <code>FREQM: <a class="struct" href="../atsamd51j19a/struct.FREQM.html" title="struct atsamd51j19a::FREQM">FREQM</a></code>
+                           </span></span><div class='docblock'><p>FREQM</p>
+</div><span id="structfield.GCLK" class="structfield small-section-header">
+                           <a href="#structfield.GCLK" class="anchor field"></a>
+                           <span id="GCLK.v" class='invisible'>
+                           <code>GCLK: <a class="struct" href="../atsamd51j19a/struct.GCLK.html" title="struct atsamd51j19a::GCLK">GCLK</a></code>
+                           </span></span><div class='docblock'><p>GCLK</p>
+</div><span id="structfield.HMATRIX" class="structfield small-section-header">
+                           <a href="#structfield.HMATRIX" class="anchor field"></a>
+                           <span id="HMATRIX.v" class='invisible'>
+                           <code>HMATRIX: <a class="struct" href="../atsamd51j19a/struct.HMATRIX.html" title="struct atsamd51j19a::HMATRIX">HMATRIX</a></code>
+                           </span></span><div class='docblock'><p>HMATRIX</p>
+</div><span id="structfield.ICM" class="structfield small-section-header">
+                           <a href="#structfield.ICM" class="anchor field"></a>
+                           <span id="ICM.v" class='invisible'>
+                           <code>ICM: <a class="struct" href="../atsamd51j19a/struct.ICM.html" title="struct atsamd51j19a::ICM">ICM</a></code>
+                           </span></span><div class='docblock'><p>ICM</p>
+</div><span id="structfield.I2S" class="structfield small-section-header">
+                           <a href="#structfield.I2S" class="anchor field"></a>
+                           <span id="I2S.v" class='invisible'>
+                           <code>I2S: <a class="struct" href="../atsamd51j19a/struct.I2S.html" title="struct atsamd51j19a::I2S">I2S</a></code>
+                           </span></span><div class='docblock'><p>I2S</p>
+</div><span id="structfield.MCLK" class="structfield small-section-header">
+                           <a href="#structfield.MCLK" class="anchor field"></a>
+                           <span id="MCLK.v" class='invisible'>
+                           <code>MCLK: <a class="struct" href="../atsamd51j19a/struct.MCLK.html" title="struct atsamd51j19a::MCLK">MCLK</a></code>
+                           </span></span><div class='docblock'><p>MCLK</p>
+</div><span id="structfield.NVMCTRL" class="structfield small-section-header">
+                           <a href="#structfield.NVMCTRL" class="anchor field"></a>
+                           <span id="NVMCTRL.v" class='invisible'>
+                           <code>NVMCTRL: <a class="struct" href="../atsamd51j19a/struct.NVMCTRL.html" title="struct atsamd51j19a::NVMCTRL">NVMCTRL</a></code>
+                           </span></span><div class='docblock'><p>NVMCTRL</p>
+</div><span id="structfield.OSCCTRL" class="structfield small-section-header">
+                           <a href="#structfield.OSCCTRL" class="anchor field"></a>
+                           <span id="OSCCTRL.v" class='invisible'>
+                           <code>OSCCTRL: <a class="struct" href="../atsamd51j19a/struct.OSCCTRL.html" title="struct atsamd51j19a::OSCCTRL">OSCCTRL</a></code>
+                           </span></span><div class='docblock'><p>OSCCTRL</p>
+</div><span id="structfield.OSC32KCTRL" class="structfield small-section-header">
+                           <a href="#structfield.OSC32KCTRL" class="anchor field"></a>
+                           <span id="OSC32KCTRL.v" class='invisible'>
+                           <code>OSC32KCTRL: <a class="struct" href="../atsamd51j19a/struct.OSC32KCTRL.html" title="struct atsamd51j19a::OSC32KCTRL">OSC32KCTRL</a></code>
+                           </span></span><div class='docblock'><p>OSC32KCTRL</p>
+</div><span id="structfield.PAC" class="structfield small-section-header">
+                           <a href="#structfield.PAC" class="anchor field"></a>
+                           <span id="PAC.v" class='invisible'>
+                           <code>PAC: <a class="struct" href="../atsamd51j19a/struct.PAC.html" title="struct atsamd51j19a::PAC">PAC</a></code>
+                           </span></span><div class='docblock'><p>PAC</p>
+</div><span id="structfield.PCC" class="structfield small-section-header">
+                           <a href="#structfield.PCC" class="anchor field"></a>
+                           <span id="PCC.v" class='invisible'>
+                           <code>PCC: <a class="struct" href="../atsamd51j19a/struct.PCC.html" title="struct atsamd51j19a::PCC">PCC</a></code>
+                           </span></span><div class='docblock'><p>PCC</p>
+</div><span id="structfield.PDEC" class="structfield small-section-header">
+                           <a href="#structfield.PDEC" class="anchor field"></a>
+                           <span id="PDEC.v" class='invisible'>
+                           <code>PDEC: <a class="struct" href="../atsamd51j19a/struct.PDEC.html" title="struct atsamd51j19a::PDEC">PDEC</a></code>
+                           </span></span><div class='docblock'><p>PDEC</p>
+</div><span id="structfield.PM" class="structfield small-section-header">
+                           <a href="#structfield.PM" class="anchor field"></a>
+                           <span id="PM.v" class='invisible'>
+                           <code>PM: <a class="struct" href="../atsamd51j19a/struct.PM.html" title="struct atsamd51j19a::PM">PM</a></code>
+                           </span></span><div class='docblock'><p>PM</p>
+</div><span id="structfield.PORT" class="structfield small-section-header">
+                           <a href="#structfield.PORT" class="anchor field"></a>
+                           <span id="PORT.v" class='invisible'>
+                           <code>PORT: <a class="struct" href="../atsamd51j19a/struct.PORT.html" title="struct atsamd51j19a::PORT">PORT</a></code>
+                           </span></span><div class='docblock'><p>PORT</p>
+</div><span id="structfield.QSPI" class="structfield small-section-header">
+                           <a href="#structfield.QSPI" class="anchor field"></a>
+                           <span id="QSPI.v" class='invisible'>
+                           <code>QSPI: <a class="struct" href="../atsamd51j19a/struct.QSPI.html" title="struct atsamd51j19a::QSPI">QSPI</a></code>
+                           </span></span><div class='docblock'><p>QSPI</p>
+</div><span id="structfield.RAMECC" class="structfield small-section-header">
+                           <a href="#structfield.RAMECC" class="anchor field"></a>
+                           <span id="RAMECC.v" class='invisible'>
+                           <code>RAMECC: <a class="struct" href="../atsamd51j19a/struct.RAMECC.html" title="struct atsamd51j19a::RAMECC">RAMECC</a></code>
+                           </span></span><div class='docblock'><p>RAMECC</p>
+</div><span id="structfield.RSTC" class="structfield small-section-header">
+                           <a href="#structfield.RSTC" class="anchor field"></a>
+                           <span id="RSTC.v" class='invisible'>
+                           <code>RSTC: <a class="struct" href="../atsamd51j19a/struct.RSTC.html" title="struct atsamd51j19a::RSTC">RSTC</a></code>
+                           </span></span><div class='docblock'><p>RSTC</p>
+</div><span id="structfield.RTC" class="structfield small-section-header">
+                           <a href="#structfield.RTC" class="anchor field"></a>
+                           <span id="RTC.v" class='invisible'>
+                           <code>RTC: <a class="struct" href="../atsamd51j19a/struct.RTC.html" title="struct atsamd51j19a::RTC">RTC</a></code>
+                           </span></span><div class='docblock'><p>RTC</p>
+</div><span id="structfield.SDHC0" class="structfield small-section-header">
+                           <a href="#structfield.SDHC0" class="anchor field"></a>
+                           <span id="SDHC0.v" class='invisible'>
+                           <code>SDHC0: <a class="struct" href="../atsamd51j19a/struct.SDHC0.html" title="struct atsamd51j19a::SDHC0">SDHC0</a></code>
+                           </span></span><div class='docblock'><p>SDHC0</p>
+</div><span id="structfield.SERCOM0" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM0" class="anchor field"></a>
+                           <span id="SERCOM0.v" class='invisible'>
+                           <code>SERCOM0: <a class="struct" href="../atsamd51j19a/struct.SERCOM0.html" title="struct atsamd51j19a::SERCOM0">SERCOM0</a></code>
+                           </span></span><div class='docblock'><p>SERCOM0</p>
+</div><span id="structfield.SERCOM1" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM1" class="anchor field"></a>
+                           <span id="SERCOM1.v" class='invisible'>
+                           <code>SERCOM1: <a class="struct" href="../atsamd51j19a/struct.SERCOM1.html" title="struct atsamd51j19a::SERCOM1">SERCOM1</a></code>
+                           </span></span><div class='docblock'><p>SERCOM1</p>
+</div><span id="structfield.SERCOM2" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM2" class="anchor field"></a>
+                           <span id="SERCOM2.v" class='invisible'>
+                           <code>SERCOM2: <a class="struct" href="../atsamd51j19a/struct.SERCOM2.html" title="struct atsamd51j19a::SERCOM2">SERCOM2</a></code>
+                           </span></span><div class='docblock'><p>SERCOM2</p>
+</div><span id="structfield.SERCOM3" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM3" class="anchor field"></a>
+                           <span id="SERCOM3.v" class='invisible'>
+                           <code>SERCOM3: <a class="struct" href="../atsamd51j19a/struct.SERCOM3.html" title="struct atsamd51j19a::SERCOM3">SERCOM3</a></code>
+                           </span></span><div class='docblock'><p>SERCOM3</p>
+</div><span id="structfield.SERCOM4" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM4" class="anchor field"></a>
+                           <span id="SERCOM4.v" class='invisible'>
+                           <code>SERCOM4: <a class="struct" href="../atsamd51j19a/struct.SERCOM4.html" title="struct atsamd51j19a::SERCOM4">SERCOM4</a></code>
+                           </span></span><div class='docblock'><p>SERCOM4</p>
+</div><span id="structfield.SERCOM5" class="structfield small-section-header">
+                           <a href="#structfield.SERCOM5" class="anchor field"></a>
+                           <span id="SERCOM5.v" class='invisible'>
+                           <code>SERCOM5: <a class="struct" href="../atsamd51j19a/struct.SERCOM5.html" title="struct atsamd51j19a::SERCOM5">SERCOM5</a></code>
+                           </span></span><div class='docblock'><p>SERCOM5</p>
+</div><span id="structfield.SUPC" class="structfield small-section-header">
+                           <a href="#structfield.SUPC" class="anchor field"></a>
+                           <span id="SUPC.v" class='invisible'>
+                           <code>SUPC: <a class="struct" href="../atsamd51j19a/struct.SUPC.html" title="struct atsamd51j19a::SUPC">SUPC</a></code>
+                           </span></span><div class='docblock'><p>SUPC</p>
+</div><span id="structfield.TC0" class="structfield small-section-header">
+                           <a href="#structfield.TC0" class="anchor field"></a>
+                           <span id="TC0.v" class='invisible'>
+                           <code>TC0: <a class="struct" href="../atsamd51j19a/struct.TC0.html" title="struct atsamd51j19a::TC0">TC0</a></code>
+                           </span></span><div class='docblock'><p>TC0</p>
+</div><span id="structfield.TC1" class="structfield small-section-header">
+                           <a href="#structfield.TC1" class="anchor field"></a>
+                           <span id="TC1.v" class='invisible'>
+                           <code>TC1: <a class="struct" href="../atsamd51j19a/struct.TC1.html" title="struct atsamd51j19a::TC1">TC1</a></code>
+                           </span></span><div class='docblock'><p>TC1</p>
+</div><span id="structfield.TC2" class="structfield small-section-header">
+                           <a href="#structfield.TC2" class="anchor field"></a>
+                           <span id="TC2.v" class='invisible'>
+                           <code>TC2: <a class="struct" href="../atsamd51j19a/struct.TC2.html" title="struct atsamd51j19a::TC2">TC2</a></code>
+                           </span></span><div class='docblock'><p>TC2</p>
+</div><span id="structfield.TC3" class="structfield small-section-header">
+                           <a href="#structfield.TC3" class="anchor field"></a>
+                           <span id="TC3.v" class='invisible'>
+                           <code>TC3: <a class="struct" href="../atsamd51j19a/struct.TC3.html" title="struct atsamd51j19a::TC3">TC3</a></code>
+                           </span></span><div class='docblock'><p>TC3</p>
+</div><span id="structfield.TC4" class="structfield small-section-header">
+                           <a href="#structfield.TC4" class="anchor field"></a>
+                           <span id="TC4.v" class='invisible'>
+                           <code>TC4: <a class="struct" href="../atsamd51j19a/struct.TC4.html" title="struct atsamd51j19a::TC4">TC4</a></code>
+                           </span></span><div class='docblock'><p>TC4</p>
+</div><span id="structfield.TC5" class="structfield small-section-header">
+                           <a href="#structfield.TC5" class="anchor field"></a>
+                           <span id="TC5.v" class='invisible'>
+                           <code>TC5: <a class="struct" href="../atsamd51j19a/struct.TC5.html" title="struct atsamd51j19a::TC5">TC5</a></code>
+                           </span></span><div class='docblock'><p>TC5</p>
+</div><span id="structfield.TCC0" class="structfield small-section-header">
+                           <a href="#structfield.TCC0" class="anchor field"></a>
+                           <span id="TCC0.v" class='invisible'>
+                           <code>TCC0: <a class="struct" href="../atsamd51j19a/struct.TCC0.html" title="struct atsamd51j19a::TCC0">TCC0</a></code>
+                           </span></span><div class='docblock'><p>TCC0</p>
+</div><span id="structfield.TCC1" class="structfield small-section-header">
+                           <a href="#structfield.TCC1" class="anchor field"></a>
+                           <span id="TCC1.v" class='invisible'>
+                           <code>TCC1: <a class="struct" href="../atsamd51j19a/struct.TCC1.html" title="struct atsamd51j19a::TCC1">TCC1</a></code>
+                           </span></span><div class='docblock'><p>TCC1</p>
+</div><span id="structfield.TCC2" class="structfield small-section-header">
+                           <a href="#structfield.TCC2" class="anchor field"></a>
+                           <span id="TCC2.v" class='invisible'>
+                           <code>TCC2: <a class="struct" href="../atsamd51j19a/struct.TCC2.html" title="struct atsamd51j19a::TCC2">TCC2</a></code>
+                           </span></span><div class='docblock'><p>TCC2</p>
+</div><span id="structfield.TCC3" class="structfield small-section-header">
+                           <a href="#structfield.TCC3" class="anchor field"></a>
+                           <span id="TCC3.v" class='invisible'>
+                           <code>TCC3: <a class="struct" href="../atsamd51j19a/struct.TCC3.html" title="struct atsamd51j19a::TCC3">TCC3</a></code>
+                           </span></span><div class='docblock'><p>TCC3</p>
+</div><span id="structfield.TCC4" class="structfield small-section-header">
+                           <a href="#structfield.TCC4" class="anchor field"></a>
+                           <span id="TCC4.v" class='invisible'>
+                           <code>TCC4: <a class="struct" href="../atsamd51j19a/struct.TCC4.html" title="struct atsamd51j19a::TCC4">TCC4</a></code>
+                           </span></span><div class='docblock'><p>TCC4</p>
+</div><span id="structfield.TRNG" class="structfield small-section-header">
+                           <a href="#structfield.TRNG" class="anchor field"></a>
+                           <span id="TRNG.v" class='invisible'>
+                           <code>TRNG: <a class="struct" href="../atsamd51j19a/struct.TRNG.html" title="struct atsamd51j19a::TRNG">TRNG</a></code>
+                           </span></span><div class='docblock'><p>TRNG</p>
+</div><span id="structfield.USB" class="structfield small-section-header">
+                           <a href="#structfield.USB" class="anchor field"></a>
+                           <span id="USB.v" class='invisible'>
+                           <code>USB: <a class="struct" href="../atsamd51j19a/struct.USB.html" title="struct atsamd51j19a::USB">USB</a></code>
+                           </span></span><div class='docblock'><p>USB</p>
+</div><span id="structfield.WDT" class="structfield small-section-header">
+                           <a href="#structfield.WDT" class="anchor field"></a>
+                           <span id="WDT.v" class='invisible'>
+                           <code>WDT: <a class="struct" href="../atsamd51j19a/struct.WDT.html" title="struct atsamd51j19a::WDT">WDT</a></code>
+                           </span></span><div class='docblock'><p>WDT</p>
+</div><h2 id='methods' class='small-section-header'>Methods<a href='#methods' class='anchor'></a></h2><h3 id='impl' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl <a class="struct" href="../atsamd51j19a/struct.Peripherals.html" title="struct atsamd51j19a::Peripherals">Peripherals</a></code><a href='#impl' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/atsamd51j19a/lib.rs.html#1892-2064' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.take' class="method"><span id='take.v' class='invisible'><table class='table-display'><tbody><tr><td><code>pub fn <a href='#method.take' class='fnname'>take</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;Self&gt;</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/atsamd51j19a/lib.rs.html#1895-1903' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock'><p>Returns all the peripherals <em>once</em></p>
+</div><h4 id='method.steal' class="method"><span id='steal.v' class='invisible'><table class='table-display'><tbody><tr><td><code>pub unsafe fn <a href='#method.steal' class='fnname'>steal</a>() -&gt; Self</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../src/atsamd51j19a/lib.rs.html#1905-2063' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock'><p>Unchecked version of <code>Peripherals::take</code></p>
+</div></div><h2 id='synthetic-implementations' class='small-section-header'>Auto Trait Implementations<a href='#synthetic-implementations' class='anchor'></a></h2><div id='synthetic-implementations-list'><h3 id='impl-Send' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Send.html" title="trait core::marker::Send">Send</a> for <a class="struct" href="../atsamd51j19a/struct.Peripherals.html" title="struct atsamd51j19a::Peripherals">Peripherals</a></code><a href='#impl-Send' class='anchor'></a></span></td><td><span class='out-of-band'></span></td></tr></tbody></table></h3><div class='impl-items'></div><h3 id='impl-Sync' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl !<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sync.html" title="trait core::marker::Sync">Sync</a> for <a class="struct" href="../atsamd51j19a/struct.Peripherals.html" title="struct atsamd51j19a::Peripherals">Peripherals</a></code><a href='#impl-Sync' class='anchor'></a></span></td><td><span class='out-of-band'></span></td></tr></tbody></table></h3><div class='impl-items'></div></div><h2 id='blanket-implementations' class='small-section-header'>Blanket Implementations<a href='#blanket-implementations' class='anchor'></a></h2><div id='blanket-implementations-list'><h3 id='impl-From' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a> for T</code><a href='#impl-From' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#461-463' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.from' class="method hidden"><span id='from.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(t: T) -&gt; T</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#462' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock hidden'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-TryFrom' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T, U&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html" title="trait core::convert::TryFrom">TryFrom</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;U&gt;,&nbsp;</span></code><a href='#impl-TryFrom' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#480-486' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='associatedtype.Error' class="type"><span id='Error.t' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html#associatedtype.Error' class="type">Error</a> = !</code></span></h4>
+<div class='stability'><div class='stab unstable'><span class=microscope>🔬</span> This is a nightly-only experimental API.  (<code>try_from</code>)</div></div><div class='docblock'><p>The type returned in the event of a conversion error.</p>
+</div><h4 id='method.try_from' class="method hidden"><span id='try_from.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html#tymethod.try_from' class='fnname'>try_from</a>(value: U) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;T, &lt;T as <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html" title="trait core::convert::TryFrom">TryFrom</a>&lt;U&gt;&gt;::<a class="type" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html#associatedtype.Error" title="type core::convert::TryFrom::Error">Error</a>&gt;</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#483-485' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='stability hidden'><div class='stab unstable'><span class=microscope>🔬</span> This is a nightly-only experimental API.  (<code>try_from</code>)</div></div><div class='docblock hidden'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-TryInto' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T, U&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryInto.html" title="trait core::convert::TryInto">TryInto</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;U: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html" title="trait core::convert::TryFrom">TryFrom</a>&lt;T&gt;,&nbsp;</span></code><a href='#impl-TryInto' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#468-475' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='associatedtype.Error-1' class="type"><span id='Error.t-1' class='invisible'><code>type <a href='https://doc.rust-lang.org/nightly/core/convert/trait.TryInto.html#associatedtype.Error' class="type">Error</a> = &lt;U as <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html" title="trait core::convert::TryFrom">TryFrom</a>&lt;T&gt;&gt;::<a class="type" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html#associatedtype.Error" title="type core::convert::TryFrom::Error">Error</a></code></span></h4>
+<div class='stability'><div class='stab unstable'><span class=microscope>🔬</span> This is a nightly-only experimental API.  (<code>try_from</code>)</div></div><div class='docblock'><p>The type returned in the event of a conversion error.</p>
+</div><h4 id='method.try_into' class="method hidden"><span id='try_into.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.TryInto.html#tymethod.try_into' class='fnname'>try_into</a>(self) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;U, &lt;U as <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html" title="trait core::convert::TryFrom">TryFrom</a>&lt;T&gt;&gt;::<a class="type" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryFrom.html#associatedtype.Error" title="type core::convert::TryFrom::Error">Error</a>&gt;</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#472-474' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='stability hidden'><div class='stab unstable'><span class=microscope>🔬</span> This is a nightly-only experimental API.  (<code>try_from</code>)</div></div><div class='docblock hidden'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-Into' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T, U&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.Into.html" title="trait core::convert::Into">Into</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;U: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.From.html" title="trait core::convert::From">From</a>&lt;T&gt;,&nbsp;</span></code><a href='#impl-Into' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#452-457' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.into' class="method hidden"><span id='into.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.Into.html#tymethod.into' class='fnname'>into</a>(self) -&gt; U</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/convert.rs.html#454-456' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock hidden'><p>Performs the conversion.</p>
+</div></div><h3 id='impl-Borrow' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/borrow/trait.Borrow.html" title="trait core::borrow::Borrow">Borrow</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: ?<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a>,&nbsp;</span></code><a href='#impl-Borrow' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/borrow.rs.html#219-221' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.borrow' class="method hidden"><span id='borrow.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/borrow/trait.Borrow.html#tymethod.borrow' class='fnname'>borrow</a>(&amp;self) -&gt; &amp;T</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/borrow.rs.html#220' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock hidden'><p>Immutably borrows from an owned value. <a href="https://doc.rust-lang.org/nightly/core/borrow/trait.Borrow.html#tymethod.borrow">Read more</a></p>
+</div></div><h3 id='impl-BorrowMut' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html" title="trait core::borrow::BorrowMut">BorrowMut</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: ?<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a>,&nbsp;</span></code><a href='#impl-BorrowMut' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/borrow.rs.html#224-226' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.borrow_mut' class="method hidden"><span id='borrow_mut.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html#tymethod.borrow_mut' class='fnname'>borrow_mut</a>(&amp;mut self) -&gt; &amp;mut T</code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/borrow.rs.html#225' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='docblock hidden'><p>Mutably borrows from an owned value. <a href="https://doc.rust-lang.org/nightly/core/borrow/trait.BorrowMut.html#tymethod.borrow_mut">Read more</a></p>
+</div></div><h3 id='impl-Any' class='impl'><span class='in-band'><table class='table-display'><tbody><tr><td><code>impl&lt;T&gt; <a class="trait" href="https://doc.rust-lang.org/nightly/core/any/trait.Any.html" title="trait core::any::Any">Any</a> for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: 'static + ?<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a>,&nbsp;</span></code><a href='#impl-Any' class='anchor'></a></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/any.rs.html#114-116' title='goto source code'>[src]</a></span></td></tr></tbody></table></h3><div class='impl-items'><h4 id='method.get_type_id' class="method hidden"><span id='get_type_id.v' class='invisible'><table class='table-display'><tbody><tr><td><code>fn <a href='https://doc.rust-lang.org/nightly/core/any/trait.Any.html#tymethod.get_type_id' class='fnname'>get_type_id</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/core/any/struct.TypeId.html" title="struct core::any::TypeId">TypeId</a></code></span></td><td><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/any.rs.html#115' title='goto source code'>[src]</a></td></tr></tbody></table></span></h4><div class='stability hidden'><div class='stab unstable'><details><summary><span class=microscope>🔬</span> This is a nightly-only experimental API.  (<code>get_type_id</code>)</summary><p>this method will likely be replaced by an associated static</p>
+</details></div></div><div class='docblock hidden'><p>Gets the <code>TypeId</code> of <code>self</code>. <a href="https://doc.rust-lang.org/nightly/core/any/trait.Any.html#tymethod.get_type_id">Read more</a></p>
+</div></div></div></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "atsamd51j19a";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>
