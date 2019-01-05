@@ -20,19 +20,11 @@ optional = true
 
 [dependencies.atsamd21-hal]
 path = "../../hal"
-<<<<<<< HEAD
-version = "~0.2"
-default-features = false
-
-[dev-dependencies]
-panic-abort = "~0.3"
-=======
 version = "~0.3"
 default-features = false
 
 [dev-dependencies]
 panic-halt = "~0.2"
->>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
 panic-semihosting = "~0.5"
 cortex-m-semihosting = "~0.3"
 
