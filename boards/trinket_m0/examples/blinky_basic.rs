@@ -1,8 +1,8 @@
 #![no_std]
 #![no_main]
 
+extern crate panic_halt;
 extern crate trinket_m0 as hal;
-extern crate panic_abort;
 
 use hal::clock::GenericClockController;
 use hal::delay::Delay;

@@ -2,9 +2,9 @@
 set -x
 set -e
 
-cargo install --force --git https://github.com/wez/svd2rust --rev e0de96e90d6fd4c4d7207111fbe72bf2b531d593 svd2rust
-cargo install --force --version 0.99.2 rustfmt-nightly
-cargo install --force --version 0.3.0 form
+cargo install --force --git https://github.com/wez/svd2rust --branch no_unions svd2rust
+cargo +nightly install --force --version 1.0.1 rustfmt-nightly
+cargo install --force --version 0.6.0 form
 
 TOP=$PWD
 
@@ -13,7 +13,7 @@ for chip in atsamd21g18a atsamd21e18a atsamd51j19a ; do
   CHIP=$(echo $chip | tr a-z A-Z)
   rm -rf src
   mkdir src
-  svd2rust -i $TOP/svd/$CHIP.svd --nightly
+  svd2rust -i $TOP/svd/$CHIP.svd
   form -i lib.rs -o src
   rm lib.rs
   cargo fmt

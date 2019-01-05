@@ -3,11 +3,19 @@
 
 extern crate cortex_m;
 extern crate cortex_m_semihosting;
+<<<<<<< HEAD
 extern crate sodaq_one as hal;
 #[cfg(not(feature = "use_semihosting"))]
 extern crate panic_abort;
 #[cfg(feature = "use_semihosting")]
 extern crate panic_semihosting;
+=======
+#[cfg(not(feature = "use_semihosting"))]
+extern crate panic_halt;
+#[cfg(feature = "use_semihosting")]
+extern crate panic_semihosting;
+extern crate sodaq_one as hal;
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
 
 #[cfg(feature = "use_semihosting")]
 use cortex_m_semihosting::hprintln;
@@ -27,22 +35,45 @@ fn main() -> ! {
         &mut peripherals.SYSCTRL,
         &mut peripherals.NVMCTRL,
     );
+<<<<<<< HEAD
     let mut pins = hal::Pins::new( peripherals.PORT);
     let mut red_led = pins.led_red.into_open_drain_output( &mut pins.port);
     let mut green_led = pins.led_green.into_open_drain_output( &mut pins.port);
     let mut blue_led = pins.led_blue.into_open_drain_output( &mut pins.port);
     let mut delay = Delay::new( core.SYST, &mut clocks);
+=======
+    let mut pins = hal::Pins::new(peripherals.PORT);
+    let mut red_led = pins.led_red.into_open_drain_output(&mut pins.port);
+    let mut green_led = pins.led_green.into_open_drain_output(&mut pins.port);
+    let mut blue_led = pins.led_blue.into_open_drain_output(&mut pins.port);
+    let mut delay = Delay::new(core.SYST, &mut clocks);
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     let time = 1000u16;
     #[cfg(feature = "use_semihosting")]
     hprintln!("startup").unwrap();
     loop {
         #[cfg(feature = "use_semihosting")]
         hprintln!("loop").unwrap();
+<<<<<<< HEAD
         red_led.set_low(); green_led.set_high(); blue_led.set_high();
         delay.delay_ms( time);
         red_led.set_high(); green_led.set_low(); blue_led.set_high();
         delay.delay_ms( time);
         red_led.set_high(); green_led.set_high(); blue_led.set_low();
         delay.delay_ms( time);       
+=======
+        red_led.set_low();
+        green_led.set_high();
+        blue_led.set_high();
+        delay.delay_ms(time);
+        red_led.set_high();
+        green_led.set_low();
+        blue_led.set_high();
+        delay.delay_ms(time);
+        red_led.set_high();
+        green_led.set_high();
+        blue_led.set_low();
+        delay.delay_ms(time);
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     }
 }

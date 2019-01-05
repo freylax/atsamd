@@ -31,9 +31,15 @@ define_pins!(
     /// D0/A0/DAC, EXTERNAL_INT_2
     /// Can act as a true analog output
     /// as it has a DAC (which is not currently supported
+<<<<<<< HEAD
     /// by this hal) as well as input. 
     pin d0 = a2,
     /// D1/A1/AREF, EXTERNAL_INT_3 
+=======
+    /// by this hal) as well as input.
+    pin d0 = a2,
+    /// D1/A1/AREF, EXTERNAL_INT_3
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     pin d1 = a3,
     /// D2/A2, TC4/WO[0], PWM4_CH0, TC4_CH0, EXTERNAL_INT_8
     pin d2 = b8,
@@ -58,10 +64,17 @@ define_pins!(
     /// D12/A12, SERIAL_TX, EXTERNAL_INT_2
     pin d12 = b2,
     /// D13/A13, SERIAL_RX, EXTERNAL_INT_3
+<<<<<<< HEAD
     pin d13 = b3,    
     /// D14, OUTPUT
     /// red LED, set to low to turn LED on, to high to turn it off.
     /// PWM3_CH1, TC3_CH1 
+=======
+    pin d13 = b3,
+    /// D14, OUTPUT
+    /// red LED, set to low to turn LED on, to high to turn it off.
+    /// PWM3_CH1, TC3_CH1
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     pin led_red = a15,
     /// D15, OUTPUT
     /// green LED, set to low to turn LED on, to high to turn it off.
@@ -85,7 +98,11 @@ define_pins!(
     /// when running on battery and without USB connected, the regulator that suplies
     /// power has to enabled manually, this can be done to set this pin to high to enabe power.
     pin enable_pin_io = b22,
+<<<<<<< HEAD
     /// D23, INPUT, EXTERNAL_INT_1 
+=======
+    /// D23, INPUT, EXTERNAL_INT_1
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     pin switch_sense = a17,
 
     /// Analog, INPUT, battery voltage
@@ -95,7 +112,11 @@ define_pins!(
     pin usb_dm = a24,
     /// The USB D+ pad
     pin usb_dp = a25,
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     /// SERIAL1_RX, EXTERNAL_INT_13
     pin serial1_rx = a13,
     /// SERIAL1_TX, EXTERNAL_INT_12
@@ -105,7 +126,11 @@ define_pins!(
     pin i2c_sda = a22,
     /// The I2C clock line
     pin i2c_scl = a23,
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> b863795275e17e40f734653bc6d4b8d5ffa2d974
     /// LoRa RESET
     pin lora_reset = a4,
     /// MAG_INT
